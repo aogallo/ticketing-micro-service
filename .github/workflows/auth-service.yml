@@ -1,10 +1,10 @@
-name: auth-service-test
+name: auth-service
 
 on:
   - pull_request
 
 jobs:
-  auth-test:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

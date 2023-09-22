@@ -1,10 +1,10 @@
-name: expiration-service-test
+name: expiration-service
 
 on:
   - pull_request
 
 jobs:
-  expiration-test:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
