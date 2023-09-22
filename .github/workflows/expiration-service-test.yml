@@ -1,0 +1,12 @@
+name: expiration-service-test
+
+on:
+  - pull_request
+
+jobs:
+  expiration-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: cd expiration && npm install && npm run test:ci
+
