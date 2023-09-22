@@ -83,7 +83,7 @@ it('returns a 204 with valid inputs', async () => {
   // with stripe functionality mocked
   const chargeOptions = (stripe.charges.create as jest.Mock).mock.calls[0][0];
   expect(chargeOptions.source).toEqual('tok_visa');
-  expect(chargeOptions.amount).toEqual(20 * 100);
+  expect(chargeOptions.amount).toEqual(price * 100);
   expect(chargeOptions.currency).toEqual('usd');
 
   // connect to the stripe API
