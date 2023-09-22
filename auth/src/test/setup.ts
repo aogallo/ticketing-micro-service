@@ -10,14 +10,6 @@ declare global {
   let signin: () => Promise<string[]>
 }
 
-// declare global {
-//   namespace NodeJS {
-//     interface Global {
-//       signin: () => Promise<string[]>
-//     }
-//   }
-// }
-
 beforeAll(async () => {
   process.env.JWT_KEY = 'whatevervalue'
   mongo = await MongoMemoryServer.create()
