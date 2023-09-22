@@ -1,7 +1,9 @@
 name: orders-service
 
 on:
-  - pull_request
+  pull_request:
+    paths:
+      - 'orders/**'
 
 jobs:
   test:
