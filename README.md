@@ -29,3 +29,5 @@ Forward the port
 ```bash
 kubectl  <id-pod> <port>:<port>
 ```
+
+[payment documentation](/payments/README.md)
