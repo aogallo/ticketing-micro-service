@@ -5,14 +5,12 @@
   "license": "MIT",
   "scripts": {
     "start": "ts-node-dev src/index.ts",
-    "test": "jest --watchAll --no-cache --verbose"
+    "test": "jest --watchAll --no-cache --verbose",
+    "test:ci": "jest --no-cache --verbose"
   },
   "jest": {
     "preset": "ts-jest",
-    "testEnvironment": "node",
-    "setupFilesAfterEnv": [
-      "./src/test/setup.ts"
-    ]
+    "testEnvironment": "node"
   },
   "devDependencies": {
     "@types/bull": "4.10.0",
